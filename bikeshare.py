@@ -11,7 +11,7 @@ def check_input(input_s,input_t):
     while True:
         input_r=input(input_s)
         try:
-            if input_r in ['chicago','new york city','washington'] and input_t == 1:
+            if input_r in ['chicago','michigan','washington'] and input_t == 1:
                 break
             elif input_r in ['january', 'february', 'march', 'april', 'may', 'june','all'] and input_t == 2:
                 break
@@ -40,11 +40,11 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city=check_input("Please select one city: chicago, new york city or washington?",1).lower()
+    # TO DO: get user input for city (chicago, michigan, washington). HINT: Use a while loop to handle invalid inputs
+    city=check_input("Please select one city: chicago, Michigan or washington?",1).lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    month=check_input("Select a month ( january, february,.... or all)?",2).lower()
+    month=check_input("Select a month ( january, february, March.... or all)?",2).lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day=check_input("Which day?(saturday,sunday.... or all)",3).lower()
